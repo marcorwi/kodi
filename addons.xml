@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repository Ufficiale Radio Web Italia</summary>
-        <description>Only Italian Music.</description>
+        <description>Only Italian Music</description>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
