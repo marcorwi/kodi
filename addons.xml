@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.radiowebitalia" name="Radio Web Italia Repo" version="1.3.2" provider-name="sirain">
-    <extension point="xbmc.addon.repository">
+<addons>
+
+<addon id="repository.radiowebitalia" name="Radio Web Italia Repo" version="1.3.2" provider-name="Marco">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Radio Web Italia Repo">
         <dir>
-            <info compressed="false">https://github.com/marcorwi/kodi/raw/refs/heads/main/addons.xml</info>
-            <checksum>https://github.com/marcorwi/kodi/raw/refs/heads/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/marcorwi/kodi/raw/refs/heads/main/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/marcorwi/kodi/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/marcorwi/kodi/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/marcorwi/kodi/main/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Repository Ufficiale Radio Web Italia</summary>
-        <description>Only Italian Music</description>
+        <summary>Repository ufficiale Radio Web Italia</summary>
+        <description>Scarica gli add-on per ascoltare la radio.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.radiowebitalia.nuovo" name="Radio Web Italia" version="1.3.2" provider-name="Marco">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Radio Web Italia Streaming</summary>
+        <description>Ascolta la musica di Radio Web Italia direttamente su Kodi.</description>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
+
+</addons>
