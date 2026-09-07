@@ -1,4 +1,4 @@
-Srls<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
     <addon id="plugin.audio.radiowebitalia.nuovo" name="Radio Web Italia" version="1.3.8" provider-name="MAF Media Srls">
         <requires>
@@ -17,12 +17,15 @@ Srls<?xml version="1.0" encoding="UTF-8"?>
         </extension>
     </addon>
 
-    <addon id="repository.radiowebitalia" name="Radio Web Italia Repo" version="1.3.8" provider-name="sirain">
+    <addon id="repository.radiowebitalia" name="Radio Web Italia Repo" version="1.3.8" provider-name="MAF Media Srls">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
         <extension point="xbmc.addon.repository" name="Radio Web Italia Repo">
             <dir>
-                <info compressed="false">>https://cdn.jsdelivr.net/gh/marcorwi/kodi@main/addons.xml</info>
-                <checksum>>https://cdn.jsdelivr.net/gh/marcorwi/kodi@main/addons.xml.md5</checksum>
-                <datadir zip="true">>https://cdn.jsdelivr.net/gh/marcorwi/kodi@main/</datadir>
+                <info compressed="false">https://marcorwi.github.io/kodi/addons.xml</info>
+                <checksum>https://marcorwi.github.io/kodi/addons.xml.md5</checksum>
+                <datadir zip="true">https://marcorwi.github.io/kodi/</datadir>
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
